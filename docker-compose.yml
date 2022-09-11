@@ -1,0 +1,8 @@
+version: '3.4'
+
+services:
+  stdbank-pokemon.api:
+    image: ${DOCKER_REGISTRY-}stdbank-pokemon-api
+    build:
+      context: .
+      dockerfile: Pokemon_Api/Dockerfile
